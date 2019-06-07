@@ -13,7 +13,8 @@ var keys = require('./config/keys');
 
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/shopper');
-mongoose.connect('mongodb+srv://admin:123456789*@cluster0-opzwm.gcp.mongodb.net/shopper');
+// mongoose.connect('mongodb+srv://admin:123456789*@cluster0-opzwm.gcp.mongodb.net/shopper');
+mongoose.connect(process.env.mongo_uri);
 mongoose.Promise = global.Promise
 
 var app = express();
