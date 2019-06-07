@@ -6,10 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var keys = require('./config/keys');
 
-// mongoDB CONNECT
-// var mongoose = require('mongoose');
-// mongoose.connect(keys.mongoURI); 
-// mongoose.Promise = global.Promise;
 
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/shopper');
